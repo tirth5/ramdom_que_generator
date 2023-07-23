@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Landing Page Example</title>
+    
+    
+  </head>
+  <body >
+    <div id="mainframe">
+    <h1>Welcome to the Codeforces</h1>
+    <form action="t1.html">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username">
+      
+      <label for="dropdown">Select an option:</label>
+      <select id="dropdown" name="dropdown">
+       
+      </select>
+      
+      <button type="submit" onclick="hr()">Submit</button>
+    
+    </form>
+</div>
+  </body>
+  <script>
+    var rat = "";
+    for (let i = 800; i <= 3500; i += 100) {
+        rat += `<option value="${i}" id ="r${i}"> ${i} </option>` + "\n";
+    }
+    document.getElementById("dropdown").innerHTML = rat;
+</script>
+
+  <script src="mysc.js"></script>
+</html>
